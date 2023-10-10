@@ -1,9 +1,68 @@
-.body{
+body {
     margin: 0;
-    background-color: #1e1e1e;
+    background-color:#1e1e1e;
+    font-family: Inter, sana-serif;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote{
     margin: 0;
     padding: 0;
+}
+
+.content-section{
+    box-sizing:border-box;
+    width: 360px;
+    margin: auto;
+}
+
+.content-section_theme_dark {
+    color: #fff;
+    background-color: #131313;
+}
+
+.content-section_theme_bright{
+    color:  #131313;
+    background-color: #FEE42A;
+}
+
+.header{
+    display: flex; /*выстроили элементы в строку*/
+    justify-content: space-between; /*Элементы равномерно распределены вдоль главной оси контейнера. Расстояния между каждой парой соседних элементов равны. Первый элемент прижат к началу контейнера по главной оси, а последний - к концу.*/
+    align-items: flex-start;/*управляет выравниванием элементов по поперечной оси. Края перекрестных полей элементов flex совпадают с краями перекрестных линий.*/
+    padding: 24px 20px;
+}
+
+.header__logo{
+    display:block;
+    width: 78px;
+}
+
+.header__menu-link{
+    color: #fff;
+    
+}
+
+.header__menu-item{
+    list-style-type: none;
+}
+
+.cover {
+    padding: 7px 24px 32px 20px;
+}
+
+.intro {
+    padding: 0 20px 38px;
+}
+
+.reasons{
+    padding: 40px 20px;
+}
+
+.how-to {
+    padding: 40px 20px 60px;
+}
+
+.footer{
+    padding: 20px;
 }
