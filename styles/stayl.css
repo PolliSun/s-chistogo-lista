@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color:#1e1e1e;
-    font-family: Inter, sana-serif;
+    font-family: 'Inter', sana-serif;
     font-weight: 400;
 }
 
@@ -38,25 +38,117 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote{
     width: 78px;
 }
 
-.header__menu-link{
-    color: #fff;
-    
+.header__menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
 }
 
-.header__menu-item{
-    list-style-type: none;
+.header__menu-item_active .header__menu-link{
+    text-decoration: none;
+}
+
+.header__menu-link{
+    color: #fff;
+    font-size: 16px;
+    line-height: 19.2px;
 }
 
 .cover {
+    min-height: 258px;
     padding: 7px 24px 32px 20px;
+    background-image: url(../images/cover.svg);
+    background-repeat:no-repeat;
+    background-size: 95% auto;
+    background-position: right center;
+    }
+
+.cover__title {
+    width: 100%;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.accent-span{
+    display:block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
 }
 
 .intro {
     padding: 0 20px 38px;
 }
 
+.intro__heading{ 
+    display: flex;
+    justify-content: space-between; 
+    gap: 24px;
+    color: #CCCCCC;
+    font-size: 16px;
+    }
+
+.intro__title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.intro__date{
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.intro__main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 21.6px;
+}
+
 .reasons{
     padding: 40px 20px;
+}
+
+.content-section__subtitle{
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 115%; 
+    margin-bottom: 32px;
+    
+}
+
+.content-section__introduction{
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 0 32px;
+}
+
+.content-section__list{ 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 21.6px;
+    padding: 0 0 0 16px;
+    }
+
+.content-section__list-accent{
+    font-weight: 700;
 }
 
 .how-to {
